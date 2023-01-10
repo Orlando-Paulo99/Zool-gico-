@@ -1,5 +1,6 @@
 import animal.Animals;
 import animal.Cachorro;
+import animal.leao;
 import java.util.Scanner;
 
 
@@ -53,9 +54,28 @@ public class zooTeste {
    cat.altura=tec.nextDouble();
    
    cat.setadd_som("miando");
-   cat.setadd_som("\nmiaumiaumiau");
-   System.out.println(cat.getaddSom());
+   
+   System.out.println("O gato está "+cat.getaddSom());
    System.out.println("Cadastro do gato feito com sucesso ");
+   
+   
+   leao lion=new leao();
+   System.out.println("Nome do leão ");
+   lion.nome_l=tec.next();
+   
+   System.out.println("Cor do leão");
+   lion.cor_l=tec.next();
+   
+   System.out.println("Idade do leão");
+   lion.idade_l=tec.nextInt();
+   
+   System.out.println("Altura do leão");
+   lion.altura_l=tec.nextDouble();
+   lion.setadd_som("Ruhindo");
+   
+   System.out.println("O leão está "+lion.getaddSom());
+   
+   System.out.println("Cadastro do leão feito com sucesso ");
    
    
    
